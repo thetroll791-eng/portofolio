@@ -25,7 +25,7 @@ const INFO = [
   {
     icon: MapPin,
     title: "Lokasi",
-    value: "Indonesia — remote worldwide",
+    value: "Indonesia — bisa dari mana aja",
     href: undefined,
   },
   {
@@ -95,7 +95,7 @@ export function Contact() {
         <SectionHeading
           index="05 // KONTAK"
           title="Mari Bicara"
-          subtitle="Butuh pentest, audit aplikasi, atau cuma mau diskusi soal bug? Sini, ketik aja."
+          subtitle="Mau nitip bikin web, ngobrol soal Python & security, atau sekadar kenalan? Sini, ketik aja."
         />
 
         <div className="grid gap-8 lg:grid-cols-5">
@@ -142,9 +142,10 @@ export function Contact() {
               <ShieldCheck className="h-6 w-6 shrink-0 text-terminal" aria-hidden />
               <p className="text-sm leading-relaxed text-muted-foreground">
                 <span className="font-semibold text-terminal">
-                  Ada info sensitif?
+                  Santai aja
                 </span>{" "}
-                Email dulu, nanti kubalas pakai kunci PGP biar aman.
+                — sapa pake bahasa sehari-hari. Aku bales beneran, bukan
+                auto-reply.
               </p>
             </motion.div>
 
@@ -242,7 +243,7 @@ export function Contact() {
                 minLength={10}
                 maxLength={2000}
                 rows={5}
-                placeholder="Tulis di sini — butuh pentest? audit? kerja sama? apa aja..."
+                placeholder="Tulis di sini — nitip web? tanya-tanya? sekadar kenalan? gas aja..."
                 value={form.message}
                 onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
                 className={`${inputClass} min-h-[130px] resize-y`}

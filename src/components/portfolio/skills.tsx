@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import {
-  Swords,
+  Globe,
   ShieldHalf,
-  Code2,
+  Terminal,
   Wrench,
 } from "lucide-react";
 import { SectionHeading } from "./section-heading";
@@ -12,53 +12,53 @@ import { TiltCard } from "./tilt-card";
 
 const CATEGORIES = [
   {
-    icon: Swords,
-    title: "Offensive Security",
-    accent: "Serangan terencana, eksekusi presisi",
+    icon: Globe,
+    title: "Web Development",
+    accent: "Bikin web yang hidup, bukan cuma jalan",
     skills: [
-      { name: "Web App Penetration Testing", level: 95 },
-      { name: "Network Penetration Testing", level: 90 },
-      { name: "Exploit Development", level: 85 },
-      { name: "Social Engineering", level: 78 },
+      { name: "HTML & CSS", level: 80 },
+      { name: "JavaScript", level: 68 },
+      { name: "Tema & Animasi UI", level: 72 },
+      { name: "Deploy & Hosting", level: 85 },
+    ],
+  },
+  {
+    icon: Terminal,
+    title: "Python",
+    accent: "Bahasa andalan buat belajar & eksperimen",
+    skills: [
+      { name: "Dasar & Logika", level: 65 },
+      { name: "Struktur Data", level: 55 },
+      { name: "Script Otomasi Kecil", level: 50 },
+      { name: "Problem Solving", level: 70 },
     ],
   },
   {
     icon: ShieldHalf,
-    title: "Defensive Security",
-    accent: "Deteksi dini, respons cepat",
+    title: "Cybersecurity",
+    accent: "Fondasi dulu, puncak nyusul",
     skills: [
-      { name: "SIEM & Security Monitoring", level: 90 },
-      { name: "Threat Hunting", level: 88 },
-      { name: "Incident Response", level: 85 },
-      { name: "Malware Analysis", level: 78 },
-    ],
-  },
-  {
-    icon: Code2,
-    title: "Programming",
-    accent: "Kode yang dibangun untuk diuji",
-    skills: [
-      { name: "Python", level: 95 },
-      { name: "Bash Scripting", level: 90 },
-      { name: "JavaScript / TypeScript", level: 82 },
-      { name: "C / C++ & Go", level: 78 },
+      { name: "Fundamental Security", level: 50 },
+      { name: "Linux & Terminal", level: 60 },
+      { name: "Dasar Jaringan", level: 45 },
+      { name: "OWASP & CTF (lagi belajar)", level: 40 },
     ],
   },
 ];
 
 const TOOLBOX = [
+  "VS Code",
+  "Git & GitHub",
+  "Netlify",
+  "Linux & Terminal",
   "Kali Linux",
-  "Burp Suite",
-  "Metasploit",
-  "Nmap",
-  "Wireshark",
-  "Ghidra",
-  "OWASP ZAP",
-  "Splunk",
-  "Docker",
-  "Linux Hardening",
-  "Git",
-  "Cloud Security",
+  "Chrome DevTools",
+  "Figma",
+  "Python",
+  "JavaScript",
+  "HTML & CSS",
+  "Stack Overflow",
+  "Notion",
 ];
 
 function SkillBar({ name, level, delay }: { name: string; level: number; delay: number }) {
@@ -97,7 +97,7 @@ export function Skills() {
         <SectionHeading
           index="02 // KEAHLIAN"
           title="Arsenal Keahlian"
-          subtitle="Masuk kayak penyerang, nambal kayak pembela. Dua-duanya kepake tiap hari."
+          subtitle="Ini yang udah kupegang sejauh ini — dan tiap minggu masih nambah."
         />
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">

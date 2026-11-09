@@ -8,19 +8,19 @@ import { TiltCard } from "./tilt-card";
 const TERMINAL_LINES = [
   {
     cmd: "whoami",
-    out: "ad4m — cybersecurity dev. lebih sering nongkrong di terminal daripada di meeting.",
+    out: "ad4m — baru 1+ tahun nyemplung dunia code & security. cukup baru, tapi nggak kenal kata berhenti.",
   },
   {
     cmd: "cat misi.txt",
-    out: "temuin bug sebelum orang lain nemuin duluan. sesederhana itu.",
+    out: "bikin halaman yang hidup di internet, pahami cara orang merusaknya, terus bikin versi yang lebih kuat.",
   },
   {
-    cmd: "cat gaya-kerja.md",
-    out: "pikir kayak penyerang, bangun kayak yang punya sistem. tiap baris kode kutulis sambil bayangin ada yang nyoba meretaknya.",
+    cmd: "cat gaya-belajar.md",
+    out: "praktik dulu, teori nyusul. tiap error itu guru paling sabar yang pernah kutemui.",
   },
   {
-    cmd: "uptime --karier",
-    out: "5+ tahun: pentest, incident response, riset kerentanan. masih ketagihan sampe sekarang.",
+    cmd: "uptime --perjalanan",
+    out: "1+ tahun: bangun web linksayang sampai live, belajar python tiap hari, ngulik dasar security pelan-pelan.",
   },
 ];
 
@@ -28,22 +28,22 @@ const FACTS = [
   {
     icon: Crosshair,
     title: "Fokus Utama",
-    value: "Offensive Security & AppSec",
+    value: "Web Dev & Cybersecurity",
   },
   {
     icon: MapPin,
     title: "Basis Operasi",
-    value: "Indonesia — remote, kapan aja",
+    value: "Indonesia — dari mana aja",
   },
   {
     icon: Zap,
     title: "Prinsip",
-    value: "Break it first, fix it better",
+    value: "Belajar sambil bikin",
   },
   {
     icon: ShieldCheck,
     title: "Status",
-    value: "Open buat proyek baru",
+    value: "Open buat belajar & kolab",
   },
 ];
 
@@ -54,7 +54,7 @@ export function About() {
         <SectionHeading
           index="01 // TENTANG"
           title="Di Balik Topeng"
-          subtitle="Sekilas tentang orang yang bakal kamu ajak kerja sama."
+          subtitle="Ini aku — apa adanya, tanpa dibumbui."
         />
 
         <div className="grid gap-8 lg:grid-cols-5">

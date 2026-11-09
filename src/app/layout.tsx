@@ -23,22 +23,22 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: "AD4M — Cybersecurity Developer & Security Researcher",
+  title: "AD4M — Cybersecurity Developer",
   description:
-    "Portofolio AD4M — cybersecurity developer & pentester. Nyari celah sebelum orang lain nyari duluan.",
+    "Portofolio AD4M — 1+ tahun belajar web dev, Python, dan cybersecurity. Pembuat LinkSayang, live di Netlify.",
   keywords: [
     "AD4M",
     "cybersecurity",
-    "penetration testing",
-    "security researcher",
-    "ethical hacker",
+    "web developer",
+    "python",
+    "linksayang",
     "portofolio",
   ],
   authors: [{ name: "AD4M" }],
   openGraph: {
     title: "AD4M — Cybersecurity Developer",
     description:
-      "Nyari celah sebelum orang lain nyari duluan — pentest, riset kerentanan, dan tools security.",
+      "1+ tahun belajar & bikin — web dev, Python, dan cybersecurity. Proyek live: LinkSayang.",
     type: "website",
     images: ["/ad4m-spidey.jpg"],
   },

@@ -43,8 +43,8 @@ export function Footer() {
                 </span>
               </a>
               <p className="font-mono text-xs text-muted-foreground">
-                Nggak ada sistem yang 100% aman — tapi setidaknya yang kubangun
-                nggak gampang dibobol.
+                Setahun lebih jalan terus — belajar, bikin, ngulik. Bagian
+                serunya baru mau mulai.
               </p>
             </div>
 

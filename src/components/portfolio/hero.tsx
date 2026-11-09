@@ -19,9 +19,9 @@ const Scene3D = dynamic(() => import("./scene3d"), { ssr: false });
 
 const ROLES = [
   "Cybersecurity Developer",
-  "Penetration Tester",
-  "Security Researcher",
-  "Bug Bounty Hunter",
+  "Web Developer",
+  "Python Learner",
+  "Security Enthusiast",
 ];
 
 const SOCIALS = [
@@ -162,10 +162,10 @@ export function Hero() {
             transition={{ duration: 0.65, delay: 0.34 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg"
           >
-            Aku nyari celah di sistem sebelum orang iseng nyari duluan. Lima tahun
-            lebih nyemplung di pentest, riset kerentanan, dan bikin tools security.
-            Katanya sistemnya udah aman? Ya aku yang biasanya diminta ngeceknya
-            lagi.
+            Setahun lebih aku nyemplung di dunia code: bangun web dari nol
+            sampai live, ngulik Python tiap hari, dan pelan-pelan mendalami
+            cybersecurity. Masih baru? Banget. Tapi jalannya nggak pernah
+            berhenti.
           </motion.p>
 
           <motion.div
@@ -255,7 +255,7 @@ export function Hero() {
                         AD4M
                       </p>
                       <p className="font-mono text-[10px] tracking-wider text-terminal">
-                        sec_dev // lvl.99
+                        sec_dev // leveling_up
                       </p>
                     </div>
                     <Bug className="h-5 w-5 text-primary" aria-hidden />
@@ -272,7 +272,7 @@ export function Hero() {
             >
               <Fingerprint className="h-4 w-4 text-primary" aria-hidden />
               <span className="font-mono text-xs font-medium text-foreground">
-                Ethical Hacker
+                Sec Enthusiast
               </span>
             </motion.div>
             <motion.div
@@ -300,10 +300,17 @@ export function Hero() {
         className="relative z-10 mx-auto mb-10 w-full max-w-7xl px-4 sm:px-6 lg:px-8"
       >
         <div className="grid grid-cols-2 gap-6 rounded-xl border border-border bg-card/60 px-6 py-6 backdrop-blur-md sm:grid-cols-4 sm:gap-4">
-          <Counter value={5} suffix="+" label="Tahun Pengalaman" />
-          <Counter value={120} suffix="+" label="Bug Ditemukan" />
-          <Counter value={40} suffix="+" label="Proyek Beres" />
-          <Counter value={15} suffix="+" label="CTF Menang" />
+          <Counter value={1} suffix="+" label="Tahun Belajar" />
+          <Counter value={10} label="Tema di LinkSayang" />
+          <Counter value={2} label="Bahasa (ID/EN)" />
+          <div className="flex flex-col items-center gap-1 sm:items-start">
+            <span className="font-display text-3xl font-bold text-foreground sm:text-4xl">
+              <span className="text-primary">∞</span>
+            </span>
+            <span className="font-mono text-[11px] uppercase tracking-[0.18em] text-muted-foreground sm:text-xs">
+              Rasa Penasaran
+            </span>
+          </div>
         </div>
       </motion.div>
 

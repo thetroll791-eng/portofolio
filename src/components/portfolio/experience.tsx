@@ -6,56 +6,38 @@ import { SectionHeading } from "./section-heading";
 
 const TIMELINE = [
   {
-    period: "2024 — Sekarang",
-    role: "Senior Security Engineer",
-    company: "CyberShield Labs",
+    period: "2025",
+    role: "Titik Nol",
+    company: "Mulai nyemplung dunia code",
     points: [
-      "Ngelead red team 6 orang buat 40+ engagement pentest",
-      "Bangun program bug bounty internal dari nol — sekarang udah 300+ laporan valid",
-      "Racik lab simulasi serangan buat latihan engineer baru",
+      "Berawal dari rasa penasaran: kok website bisa kayak gini?",
+      "Belajar HTML, CSS, JavaScript dari internet — pelan tapi nyata",
+      "Jadilah halaman pertama, walau waktu itu masih jelek diliat",
+    ],
+    current: false,
+  },
+  {
+    period: "2025 — Sekarang",
+    role: "Belajar Python",
+    company: "Jalur mandiri — internet + konsistensi",
+    points: [
+      "Dasar Python: logika, struktur data, algoritma sederhana",
+      "Latihan lewat script kecil-kecilan tiap ada waktu luang",
+      "Target berikutnya: otomasi & ngulik sisi security",
     ],
     current: true,
   },
   {
-    period: "2022 — 2024",
-    role: "Penetration Tester",
-    company: "DigitalFort Indonesia",
+    period: "2026 — Sekarang",
+    role: "Web Developer — LinkSayang",
+    company: "Proyek pribadi — live di Netlify",
     points: [
-      "60+ pentest web, mobile & API — kebanyakan klien fintech dan e-commerce",
-      "Nemu 45+ kerentanan kritis lewat responsible disclosure",
-      "Nulis template laporan pentest yang akhirnya jadi standar kantor",
+      "Bangun sendiri dari nol: konsep, desain, kode, sampai deploy",
+      "10 tema siap pake + tema kustom: warna, emoji, efek",
+      "Dua bahasa (ID/EN), gratis, tanpa harus daftar akun",
     ],
-    current: false,
+    current: true,
   },
-  {
-    period: "2020 — 2022",
-    role: "Security Analyst (SOC)",
-    company: "NetGuard Systems",
-    points: [
-      "Shift monitoring 24/7 buat 20+ infrastruktur klien enterprise",
-      "Tangani 30+ insiden keamanan, MTTR di bawah 45 menit",
-      "Otomatisasi playbook response pakai Python biar nggak begadang melulu",
-    ],
-    current: false,
-  },
-  {
-    period: "2019 — 2020",
-    role: "Bug Bounty Hunter",
-    company: "Freelance — HackerOne & Bugcrowd",
-    points: [
-      "120+ kerentanan valid di platform bug bounty internasional",
-      "Fokusan: IDOR, broken access control, sama SSRF",
-      "Masuk hall of fame di beberapa program besar",
-    ],
-    current: false,
-  },
-];
-
-const CERTS = [
-  { code: "OSCP", name: "Offensive Security Certified Professional" },
-  { code: "CEH", name: "Certified Ethical Hacker v12" },
-  { code: "SEC+", name: "CompTIA Security+" },
-  { code: "eJPT", name: "eLearnSecurity Junior Penetration Tester" },
 ];
 
 export function Experience() {
@@ -66,7 +48,7 @@ export function Experience() {
         <SectionHeading
           index="04 // PERJALANAN"
           title="Pengalaman"
-          subtitle="Dari shift malem di SOC sampai lead red team. Singkatnya begini jalannya."
+          subtitle="Belum panjang, tapi jujur — ini jalannya sampai hari ini."
         />
 
         <div className="relative mx-auto max-w-3xl">
@@ -176,24 +158,16 @@ export function Experience() {
             <Award className="h-5 w-5 text-primary" aria-hidden />
             Sertifikasi
           </h3>
-          <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-            {CERTS.map((cert, i) => (
-              <motion.div
-                key={cert.code}
-                initial={{ opacity: 0, scale: 0.88 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.45, delay: i * 0.1 }}
-                className="group flex flex-col items-center gap-2 rounded-xl border border-border bg-card/70 p-5 text-center backdrop-blur transition-all hover:-translate-y-1 hover:border-primary/60 hover:shadow-[0_14px_38px_rgba(230,36,41,0.18)]"
-              >
-                <span className="font-display text-2xl font-black tracking-wider text-primary">
-                  {cert.code}
-                </span>
-                <span className="text-xs leading-snug text-muted-foreground">
-                  {cert.name}
-                </span>
-              </motion.div>
-            ))}
+          <div className="mx-auto max-w-xl rounded-xl border border-dashed border-border bg-card/70 p-8 text-center backdrop-blur">
+            <Award className="mx-auto h-7 w-7 text-primary/70" aria-hidden />
+            <p className="mt-4 font-display text-lg font-bold tracking-wide text-foreground">
+              Belum ada — jujur aja.
+            </p>
+            <p className="mt-3 text-sm leading-relaxed text-muted-foreground">
+              Sertifikasi resmi memang belum kepunya. Sekarang fokusnya di
+              belajar + bikin proyek nyata duluan. Slot ini kusimpen buat
+              nanti — pas udah ada sertifikat yang layang di dinding.
+            </p>
           </div>
         </motion.div>
       </div>
