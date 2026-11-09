@@ -10,9 +10,9 @@ const TIMELINE = [
     role: "Senior Security Engineer",
     company: "CyberShield Labs",
     points: [
-      "Memimpin tim red team beranggotakan 6 orang untuk 40+ engagement pentest",
-      "Membangun program bug bounty internal dari nol hingga 300+ laporan valid",
-      "Merancang lab simulasi serangan untuk pelatihan tim engineer",
+      "Ngelead red team 6 orang buat 40+ engagement pentest",
+      "Bangun program bug bounty internal dari nol — sekarang udah 300+ laporan valid",
+      "Racik lab simulasi serangan buat latihan engineer baru",
     ],
     current: true,
   },
@@ -21,9 +21,9 @@ const TIMELINE = [
     role: "Penetration Tester",
     company: "DigitalFort Indonesia",
     points: [
-      "60+ pentest aplikasi web, mobile, dan API untuk klien fintech & e-commerce",
-      "Menemukan 45+ kerentanan kritis melalui responsible disclosure",
-      "Menyusun standar laporan keamanan internal yang dipakai lintas tim",
+      "60+ pentest web, mobile & API — kebanyakan klien fintech dan e-commerce",
+      "Nemu 45+ kerentanan kritis lewat responsible disclosure",
+      "Nulis template laporan pentest yang akhirnya jadi standar kantor",
     ],
     current: false,
   },
@@ -32,9 +32,9 @@ const TIMELINE = [
     role: "Security Analyst (SOC)",
     company: "NetGuard Systems",
     points: [
-      "Monitoring 24/7 untuk 20+ infrastruktur klien enterprise",
-      "Menangani 30+ insiden keamanan dengan MTTR di bawah 45 menit",
-      "Mengotomatisasi playbook response dengan Python & SIEM",
+      "Shift monitoring 24/7 buat 20+ infrastruktur klien enterprise",
+      "Tangani 30+ insiden keamanan, MTTR di bawah 45 menit",
+      "Otomatisasi playbook response pakai Python biar nggak begadang melulu",
     ],
     current: false,
   },
@@ -44,8 +44,8 @@ const TIMELINE = [
     company: "Freelance — HackerOne & Bugcrowd",
     points: [
       "120+ kerentanan valid di platform bug bounty internasional",
-      "Fokus pada IDOR, broken access control, dan SSRF",
-      "Multiple hall of fames di program program teknologi besar",
+      "Fokusan: IDOR, broken access control, sama SSRF",
+      "Masuk hall of fame di beberapa program besar",
     ],
     current: false,
   },
@@ -66,7 +66,7 @@ export function Experience() {
         <SectionHeading
           index="04 // PERJALANAN"
           title="Pengalaman"
-          subtitle="Jejak karier di dunia keamanan siber — dari SOC analyst hingga memimpin red team."
+          subtitle="Dari shift malem di SOC sampai lead red team. Singkatnya begini jalannya."
         />
 
         <div className="relative mx-auto max-w-3xl">

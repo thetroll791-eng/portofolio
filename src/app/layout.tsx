@@ -22,10 +22,10 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
   title: "AD4M — Cybersecurity Developer & Security Researcher",
   description:
-    "Portofolio AD4M — Cybersecurity Developer, Penetration Tester & Security Researcher. Membangun dan mengamankan sistem, satu kerentanan demi satu kerentanan.",
+    "Portofolio AD4M — cybersecurity developer & pentester. Nyari celah sebelum orang lain nyari duluan.",
   keywords: [
     "AD4M",
     "cybersecurity",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "AD4M — Cybersecurity Developer",
     description:
-      "Membangun dan mengamankan sistem, satu kerentanan demi satu kerentanan.",
+      "Nyari celah sebelum orang lain nyari duluan — pentest, riset kerentanan, dan tools security.",
     type: "website",
     images: ["/ad4m-spidey.jpg"],
   },

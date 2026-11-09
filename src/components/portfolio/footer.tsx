@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Shield, ArrowUp, Github, Linkedin, Twitter } from "lucide-react";
+import { Shield, ArrowUp, Github, Mail } from "lucide-react";
 
 const FOOTER_LINKS = [
   { href: "#beranda", label: "Beranda" },
@@ -14,9 +14,8 @@ const FOOTER_LINKS = [
 ];
 
 const SOCIALS = [
-  { icon: Github, href: "https://github.com", label: "GitHub AD4M" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn AD4M" },
-  { icon: Twitter, href: "https://x.com", label: "X / Twitter AD4M" },
+  { icon: Github, href: "https://github.com/thetroll791-eng", label: "GitHub AD4M: thetroll791-eng" },
+  { icon: Mail, href: "mailto:thetroll791@gmail.com", label: "Email AD4M: thetroll791@gmail.com" },
 ];
 
 export function Footer() {
@@ -44,7 +43,8 @@ export function Footer() {
                 </span>
               </a>
               <p className="font-mono text-xs text-muted-foreground">
-                Tidak ada sistem yang 100% aman — tapi milik saya mendekati.
+                Nggak ada sistem yang 100% aman — tapi setidaknya yang kubangun
+                nggak gampang dibobol.
               </p>
             </div>
 
@@ -80,10 +80,11 @@ export function Footer() {
           </div>
 
           <div className="mt-10 flex flex-col items-center justify-between gap-3 border-t border-border pt-6 font-mono text-xs text-muted-foreground md:flex-row">
-            <p>© 2026 AD4M — Cybersecurity Developer. Seluruh hak dilindungi.</p>
+            <p>© 2026 AD4M — dibikin sendiri dari nol, tanpa template.</p>
             <p>
-              Dibangun dengan <span className="text-primary">Next.js</span> +{" "}
-              <span className="text-terminal">WebGL</span> — dan sedikit cairan laba-laba.
+              Dirakit dengan <span className="text-primary">Next.js</span> +{" "}
+              <span className="text-terminal">Three.js</span> — dan sedikit cairan
+              laba-laba.
             </p>
           </div>
         </div>

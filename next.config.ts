@@ -1,8 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
-  /* config options here */
+  // "standalone" dipakai untuk self-host / sandbox.
+  // Di Vercel otomatis dimatikan (Vercel punya deploy pipeline sendiri),
+  // jadi build tetap sukses tanpa config tambahan.
+  ...(process.env.VERCEL ? {} : { output: "standalone" as const }),
   typescript: {
     ignoreBuildErrors: true,
   },

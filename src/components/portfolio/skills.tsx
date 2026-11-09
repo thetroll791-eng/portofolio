@@ -97,7 +97,7 @@ export function Skills() {
         <SectionHeading
           index="02 // KEAHLIAN"
           title="Arsenal Keahlian"
-          subtitle="Dua sisi koin keamanan: mampu menyerang layaknya penyerang, dan membangun pertahanan yang tangguh."
+          subtitle="Masuk kayak penyerang, nambal kayak pembela. Dua-duanya kepake tiap hari."
         />
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">

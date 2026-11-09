@@ -8,8 +8,6 @@ import {
   ArrowRight,
   ChevronDown,
   Github,
-  Linkedin,
-  Twitter,
   Mail,
   Bug,
   Fingerprint,
@@ -27,10 +25,8 @@ const ROLES = [
 ];
 
 const SOCIALS = [
-  { icon: Github, href: "https://github.com", label: "GitHub AD4M" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn AD4M" },
-  { icon: Twitter, href: "https://x.com", label: "X / Twitter AD4M" },
-  { icon: Mail, href: "mailto:ad4m@cyberdev.id", label: "Email AD4M" },
+  { icon: Github, href: "https://github.com/thetroll791-eng", label: "GitHub AD4M: thetroll791-eng" },
+  { icon: Mail, href: "mailto:thetroll791@gmail.com", label: "Email AD4M: thetroll791@gmail.com" },
 ];
 
 /* ---------- typewriter ---------- */
@@ -166,10 +162,10 @@ export function Hero() {
             transition={{ duration: 0.65, delay: 0.34 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-muted-foreground md:text-lg"
           >
-            Saya membangun dan meretas sistem untuk membuat internet menjadi tempat
-            yang lebih aman. Spesialis di keamanan aplikasi web, jaringan, dan
-            pengembangan tools security — dengan ketelitian seekor laba-laba
-            menjaga jaringannya.
+            Aku nyari celah di sistem sebelum orang iseng nyari duluan. Lima tahun
+            lebih nyemplung di pentest, riset kerentanan, dan bikin tools security.
+            Katanya sistemnya udah aman? Ya aku yang biasanya diminta ngeceknya
+            lagi.
           </motion.p>
 
           <motion.div
@@ -190,7 +186,7 @@ export function Hero() {
               className="inline-flex h-12 items-center gap-2 rounded-md border border-border bg-card/60 px-7 font-semibold text-foreground backdrop-blur transition-all hover:border-primary/60 hover:text-primary"
             >
               <Terminal className="h-4 w-4" />
-              Hubungi Saya
+              Hubungi Aku
             </a>
           </motion.div>
 
@@ -305,9 +301,9 @@ export function Hero() {
       >
         <div className="grid grid-cols-2 gap-6 rounded-xl border border-border bg-card/60 px-6 py-6 backdrop-blur-md sm:grid-cols-4 sm:gap-4">
           <Counter value={5} suffix="+" label="Tahun Pengalaman" />
-          <Counter value={120} suffix="+" label="Kerentanan Ditemukan" />
-          <Counter value={40} suffix="+" label="Proyek Selesai" />
-          <Counter value={15} suffix="+" label="CTF Dimenangkan" />
+          <Counter value={120} suffix="+" label="Bug Ditemukan" />
+          <Counter value={40} suffix="+" label="Proyek Beres" />
+          <Counter value={15} suffix="+" label="CTF Menang" />
         </div>
       </motion.div>
 

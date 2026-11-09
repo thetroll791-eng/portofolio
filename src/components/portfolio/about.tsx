@@ -6,18 +6,21 @@ import { SectionHeading } from "./section-heading";
 import { TiltCard } from "./tilt-card";
 
 const TERMINAL_LINES = [
-  { cmd: "whoami", out: "ad4m — cybersecurity developer & security researcher" },
+  {
+    cmd: "whoami",
+    out: "ad4m — cybersecurity dev. lebih sering nongkrong di terminal daripada di meeting.",
+  },
   {
     cmd: "cat misi.txt",
-    out: "Melindungi dunia digital dengan menemukan kerentanan sebelum orang jahat menemukannya.",
+    out: "temuin bug sebelum orang lain nemuin duluan. sesederhana itu.",
   },
   {
     cmd: "cat gaya-kerja.md",
-    out: "Pikiran penyerang, pertahanan pembangun. Setiap baris kode saya tulis dengan asumsi seseorang akan mencoba meretaknya.",
+    out: "pikir kayak penyerang, bangun kayak yang punya sistem. tiap baris kode kutulis sambil bayangin ada yang nyoba meretaknya.",
   },
   {
     cmd: "uptime --karier",
-    out: "5+ tahun di garis depan keamanan siber: pentest, incident response, dan riset kerentanan.",
+    out: "5+ tahun: pentest, incident response, riset kerentanan. masih ketagihan sampe sekarang.",
   },
 ];
 
@@ -30,7 +33,7 @@ const FACTS = [
   {
     icon: MapPin,
     title: "Basis Operasi",
-    value: "Indonesia — Remote Worldwide",
+    value: "Indonesia — remote, kapan aja",
   },
   {
     icon: Zap,
@@ -40,7 +43,7 @@ const FACTS = [
   {
     icon: ShieldCheck,
     title: "Status",
-    value: "Tersedia untuk proyek & kolaborasi",
+    value: "Open buat proyek baru",
   },
 ];
 
@@ -51,7 +54,7 @@ export function About() {
         <SectionHeading
           index="01 // TENTANG"
           title="Di Balik Topeng"
-          subtitle="Kekuatan besar datang dengan tanggung jawab besar — termasuk menjaga sistem tetap aman."
+          subtitle="Sekilas tentang orang yang bakal kamu ajak kerja sama."
         />
 
         <div className="grid gap-8 lg:grid-cols-5">

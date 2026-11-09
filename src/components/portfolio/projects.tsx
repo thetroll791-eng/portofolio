@@ -21,7 +21,7 @@ const PROJECTS = [
     number: "01",
     title: "ReconSpider",
     description:
-      "Framework OSINT berbasis spider crawling untuk pemetaan aset, subdomain, dan endpoint target secara otomatis — lengkap dengan visualisasi graph serangan.",
+      "Tool OSINT yang crawl & petakan aset target otomatis — subdomain, endpoint, sampai graph hubungan antar sistem. Awalnya buat pakai sendiri, sekarang dipake tim lain.",
     tags: ["Python", "OSINT", "Automation"],
   },
   {
@@ -29,7 +29,7 @@ const PROJECTS = [
     number: "02",
     title: "PhishGuard",
     description:
-      "Ekstensi browser pendeteksi phishing real-time dengan machine learning: analisis URL, konten halaman, dan sertifikat SSL dalam < 50ms per request.",
+      "Ekstensi browser yang nandain situs phishing real-time: URL, konten halaman, sama sertifikat SSL. Semua dicek di bawah 50ms biar browsing nggak kerasa berat.",
     tags: ["TypeScript", "ML", "Extension"],
   },
   {
@@ -37,7 +37,7 @@ const PROJECTS = [
     number: "03",
     title: "CryptVault",
     description:
-      "Password manager zero-knowledge dengan enkripsi Argon2 + AES-256-GCM. Vault tidak pernah meninggalkan perangkat dalam bentuk plaintext.",
+      "Password manager zero-knowledge — Argon2 + AES-256-GCM. Vault nggak pernah keluar dari device dalam bentuk yang bisa dibaca. Nggak percaya cloud? Sama.",
     tags: ["Go", "Cryptography", "CLI"],
   },
   {
@@ -45,7 +45,7 @@ const PROJECTS = [
     number: "04",
     title: "SentinelIDS",
     description:
-      "Sistem deteksi intrusi berbasis anomaly detection yang mempelajari pola trafik normal jaringan dan menandai penyimpangan dengan skor risiko.",
+      "IDS yang belajar pola trafik normal jaringan, terus nandain yang aneh-aneh lengkap dengan skor risikonya. Biar SOC bisa milih mana yang dikejar duluan.",
     tags: ["Python", "ML", "Networking"],
   },
   {
@@ -53,7 +53,7 @@ const PROJECTS = [
     number: "05",
     title: "NetSentry",
     description:
-      "Dashboard monitoring jaringan real-time: packet inspection, alert IOC, dan timeline insiden — dibangun untuk tim SOC yang butuh kecepatan.",
+      "Dashboard monitoring buat tim SOC: packet inspection, alert IOC, timeline insiden. Dibikin karena dulu timnya masih copy-paste dari lima tab berbeda.",
     tags: ["React", "Go", "eBPF"],
   },
   {
@@ -61,7 +61,7 @@ const PROJECTS = [
     number: "06",
     title: "ForensiKit",
     description:
-      "Toolkit forensik digital untuk analisis artefak sistem, memori, dan jejak jaringan. Dipakai di beberapa lab forensik independen.",
+      "Kumpulan tool forensik digital — artefak sistem, dump memori, jejak jaringan. Mulai dari iseng, sekarang dipake beberapa lab independen.",
     tags: ["C++", "Forensics", "Toolkit"],
   },
 ];
@@ -72,8 +72,8 @@ export function Projects() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           index="03 // PROYEK"
-          title="Proyek Unggulan"
-          subtitle="Tools keamanan yang saya rancang dan bangun — dari recon hingga response."
+          title="Proyek Pilihan"
+          subtitle="Tools yang kubangun sendiri — sebagian masih kupake tiap hari, sebagian nge-help tim lain."
         />
 
         <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
@@ -123,7 +123,7 @@ export function Projects() {
 
                     <div className="mt-6 flex items-center justify-between border-t border-border pt-4">
                       <a
-                        href="https://github.com"
+                        href="https://github.com/thetroll791-eng"
                         target="_blank"
                         rel="noreferrer"
                         aria-label={`Kode sumber ${project.title} di GitHub`}
@@ -140,7 +140,7 @@ export function Projects() {
                         <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
                       </a>
                       <a
-                        href="https://github.com"
+                        href="https://github.com/thetroll791-eng"
                         target="_blank"
                         rel="noreferrer"
                         aria-label={`Demo ${project.title}`}

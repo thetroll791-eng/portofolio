@@ -10,8 +10,6 @@ import {
   Loader2,
   ShieldCheck,
   Github,
-  Linkedin,
-  Twitter,
 } from "lucide-react";
 import { SectionHeading } from "./section-heading";
 import { TiltCard } from "./tilt-card";
@@ -21,27 +19,25 @@ const INFO = [
   {
     icon: Mail,
     title: "Email",
-    value: "ad4m@cyberdev.id",
-    href: "mailto:ad4m@cyberdev.id",
+    value: "thetroll791@gmail.com",
+    href: "mailto:thetroll791@gmail.com",
   },
   {
     icon: MapPin,
     title: "Lokasi",
-    value: "Indonesia — Remote Worldwide",
+    value: "Indonesia — remote worldwide",
     href: undefined,
   },
   {
     icon: Clock,
     title: "Waktu Respons",
-    value: "Kurang dari 24 jam",
+    value: "< 24 jam (biasanya lebih cepat)",
     href: undefined,
   },
 ];
 
 const SOCIALS = [
-  { icon: Github, href: "https://github.com", label: "GitHub AD4M" },
-  { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn AD4M" },
-  { icon: Twitter, href: "https://x.com", label: "X / Twitter AD4M" },
+  { icon: Github, href: "https://github.com/thetroll791-eng", label: "GitHub AD4M: thetroll791-eng" },
 ];
 
 export function Contact() {
@@ -64,22 +60,21 @@ export function Contact() {
 
       if (!res.ok || !data.ok) {
         toast({
-          title: "Gagal mengirim",
-          description: data.error ?? "Terjadi kesalahan, coba lagi.",
+          title: "Gagal kirim",
+          description: data.error ?? "Ada yang error ni, coba lagi ya.",
           variant: "destructive",
         });
       } else {
         toast({
-          title: "Pesan terkirim",
-          description:
-            "Pesanmu sudah masuk ke inbox saya. Balasan segera menyusul!",
+          title: "Pesan masuk!",
+          description: "Makasih! Aku bales secepatnya — biasanya di bawah 24 jam.",
         });
         setForm({ name: "", email: "", message: "" });
       }
     } catch {
       toast({
-        title: "Gagal mengirim",
-        description: "Koneksi bermasalah. Coba lagi nanti.",
+        title: "Gagal kirim",
+        description: "Sinyalnya ngambek. Coba lagi bentar lagi ya.",
         variant: "destructive",
       });
     } finally {
@@ -99,8 +94,8 @@ export function Contact() {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
           index="05 // KONTAK"
-          title="Terhubung Dengan Saya"
-          subtitle="Punya proyek, kerentanan yang ingin didiskusikan, atau butuh audit keamanan? Kanal komunikasi terbuka."
+          title="Mari Bicara"
+          subtitle="Butuh pentest, audit aplikasi, atau cuma mau diskusi soal bug? Sini, ketik aja."
         />
 
         <div className="grid gap-8 lg:grid-cols-5">
@@ -147,9 +142,9 @@ export function Contact() {
               <ShieldCheck className="h-6 w-6 shrink-0 text-terminal" aria-hidden />
               <p className="text-sm leading-relaxed text-muted-foreground">
                 <span className="font-semibold text-terminal">
-                  Kanal aman tersedia:
+                  Ada info sensitif?
                 </span>{" "}
-                untuk informasi sensitif, minta kunci PGP saya via email.
+                Email dulu, nanti kubalas pakai kunci PGP biar aman.
               </p>
             </motion.div>
 
@@ -226,7 +221,7 @@ export function Contact() {
                   required
                   maxLength={200}
                   autoComplete="email"
-                  placeholder="nama@email.com"
+                  placeholder="kamu@email.com"
                   value={form.email}
                   onChange={(e) => setForm((f) => ({ ...f, email: e.target.value }))}
                   className={inputClass}
@@ -247,7 +242,7 @@ export function Contact() {
                 minLength={10}
                 maxLength={2000}
                 rows={5}
-                placeholder="Ceritakan proyek atau kebutuhan keamananmu..."
+                placeholder="Tulis di sini — butuh pentest? audit? kerja sama? apa aja..."
                 value={form.message}
                 onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
                 className={`${inputClass} min-h-[130px] resize-y`}
@@ -262,12 +257,12 @@ export function Contact() {
               {sending ? (
                 <>
                   <Loader2 className="h-5 w-5 animate-spin" aria-hidden />
-                  Mengirim...
+                  Sabar bentar...
                 </>
               ) : (
                 <>
                   <Send className="h-4 w-4" aria-hidden />
-                  Kirim Sekarang
+                  Gas Kirim
                 </>
               )}
             </button>
