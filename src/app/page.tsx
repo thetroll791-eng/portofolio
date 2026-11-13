@@ -7,6 +7,7 @@ import { About } from "@/components/portfolio/about";
 import { Skills } from "@/components/portfolio/skills";
 import { Projects } from "@/components/portfolio/projects";
 import { Experience } from "@/components/portfolio/experience";
+import { MusicSection } from "@/components/portfolio/music";
 import { Contact } from "@/components/portfolio/contact";
 import { Footer } from "@/components/portfolio/footer";
 import { MatrixRain } from "@/components/portfolio/matrix-rain";
@@ -32,6 +33,7 @@ export default function Home() {
         <Skills />
         <Projects />
         <Experience />
+        <MusicSection />
         <Contact />
       </main>
 

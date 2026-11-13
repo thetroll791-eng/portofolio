@@ -93,7 +93,7 @@ export function Contact() {
       />
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <SectionHeading
-          index="05 // KONTAK"
+          index="06 // KONTAK"
           title="Mari Bicara"
           subtitle="Mau nitip bikin web, ngobrol soal Python & security, atau sekadar kenalan? Sini, ketik aja."
         />

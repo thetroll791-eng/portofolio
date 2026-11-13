@@ -10,6 +10,7 @@ const FOOTER_LINKS = [
   { href: "#keahlian", label: "Keahlian" },
   { href: "#proyek", label: "Proyek" },
   { href: "#pengalaman", label: "Pengalaman" },
+  { href: "#musik", label: "Musik" },
   { href: "#kontak", label: "Kontak" },
 ];
 

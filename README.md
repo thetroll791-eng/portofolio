@@ -42,6 +42,10 @@ Di Vercel: **Settings → Environment Variables**.
 | `NEXT_PUBLIC_SITE_URL`| URL produksi buat metadata SEO, contoh: `https://ad4m.vercel.app` |
 | `RESEND_API_KEY`      | Kalau diisi, pesan dari form kontak diteruskan ke email kamu  |
 | `CONTACT_EMAIL`       | Tujuan penerusan pesan, contoh: `thetroll791@gmail.com`       |
+| `NEXT_PUBLIC_GISCUS_REPO` | Repo buat kolom komentar, format: `user/repo`, mis. `thetroll791-eng/portofolio` |
+| `NEXT_PUBLIC_GISCUS_REPO_ID` | ID repo dari giscus.app (lihat panduan di bawah) |
+| `NEXT_PUBLIC_GISCUS_CATEGORY` | Kategori Discussions, default: `Announcements` |
+| `NEXT_PUBLIC_GISCUS_CATEGORY_ID` | ID kategori dari giscus.app |
 
 > Tanpa `RESEND_API_KEY` form kontak tetap jalan (validasi + log), tapi
 > pesannya nggak sampai ke inbox. Supaya pesan masuk ke email: daftar gratis
@@ -49,10 +53,36 @@ Di Vercel: **Settings → Environment Variables**.
 > di atas. Setelah deploy, bisa juga ganti ke domain sendiri di
 > **Settings → Domains**.
 
+## Aktifkan kolom komentar (Giscus)
+
+Kolom komentar di bagian bawah section **Musik** pakai
+[giscus](https://giscus.app) — komentarnya disimpan di GitHub Discussions,
+gratis dan tanpa database. Selama env var giscus belum diset, yang tampil
+adalah kartu pengganti yang tetap rapi.
+
+Langkah aktivasi (±2 menit):
+
+1. Pastikan repo portofolio ini **public** di GitHub.
+2. Di halaman repo: **Settings → General → Features** → centang **Discussions**.
+3. Buka [github.com/apps/giscus](https://github.com/apps/giscus) → **Install** → pilih repo portofolio.
+4. Buka [giscus.app](https://giscus.app/id) → masukkan nama repo → pilih
+   mapping **pathname** dan kategori **Announcements**.
+5. Copy nilai `data-repo-id` dan `data-category-id` dari snippet yang muncul.
+6. Di Vercel: **Settings → Environment Variables** → tambahkan 4 variable
+   giscus dari tabel di atas (repo, repo ID, category, category ID).
+7. **Deployments → Redeploy** — kolom komentar langsung aktif.
+
 ## Struktur singkat
 
 ```
 src/app/                    → halaman utama, layout, metadata, API kontak
-src/components/portfolio/   → semua section (hero, about, skills, projects, dst)
+src/components/portfolio/   → semua section (hero, about, skills, projects, musik, dst)
 public/                     → foto & aset statis
 ```
+
+## Catatan section Musik
+
+Playlist "Melankolia Radikal" dari **Dongker** di-embed lewat YouTube
+(youtube-nocookie). Kalau suatu saat playlist-nya dipindah/dihapus pemiliknya,
+cukup ganti `listId` di `src/components/portfolio/music.tsx` dengan ID
+playlist YouTube baru (bagian `list=` pada URL playlist).
